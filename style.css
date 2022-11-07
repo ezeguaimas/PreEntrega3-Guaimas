@@ -1,0 +1,403 @@
+/*font-family: 'Inter Tight', sans-serif;
+font-family: 'Vollkorn', serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.global-container {
+  background-image: linear-gradient(to right, #3d3c42, #ffffea);
+}
+
+.brand-propia img {
+  width: 80px;
+  height: 80px;
+}
+
+.top-fila {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
+}
+.llamar i {
+  font-size: 50px;
+  color: darkred;
+}
+
+@media screen and (min-width: 576px) {
+  .brand-propia img {
+    display: none;
+  }
+  .llamar {
+    display: none;
+  }
+  .nav-list-propia a {
+    font-size: 140%;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: bold;
+  }
+  .nav-list-propia li {
+    padding: 5px;
+  }
+  .carousel-item-propio img {
+    max-width: 720px;
+    max-height: 480px;
+  }
+
+  .parrafo-area-areas:hover {
+    transition: all 1s;
+    font-size: 140%;
+  }
+  .nav-propia {
+    background-color: #f2f2f2;
+  }
+  .whatsapp-button:hover{
+    background-color: #ffffff;
+    color: #25d366;
+    transform: scale(1.2);
+  }
+  .areas-img-h3{
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .logo-top {
+    display: none;
+  }
+  .top-fila {
+    display: none;
+  }
+  .carousel-item-propio img {
+    width: 100%;
+  }
+
+  .nav-list-propia a {
+    font-family: "Inter Tight", sans-serif;
+  }
+  .nav-propia {
+    background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
+  }
+  .whatsapp-button:hover{
+    background-color: #ffffff;
+    color: #25d366;
+    transform: scale(1.2);
+  }
+  .areas-img-h3{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .areas-img-h3{
+    font-size: 1.5rem;
+  }
+  .parrafo-area-areas{
+    font-size: .7rem;
+  }
+}
+
+.nav-list-propia {
+  justify-content: flex-end;
+}
+
+.iconos-redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.iconos-redes ul {
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.iconos-redes i {
+  padding: 3px;
+  font-size: 45px;
+  color: rgb(55, 55, 77);
+}
+
+.iconos-redes li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  justify-content: space-between;
+}
+
+.iconos-redes li:hover {
+  transform: scale(1.2);
+}
+
+/*.iconos-redes ul:nth-child(1):hover {
+  color: darkblue;
+}
+.iconos-redes ul li:nth-child(2):hover {
+  color: purple;
+}
+.iconos-redes i:nth-child(3):hover {
+  color: lightskyblue;
+}
+.iconos-redes i:nth-child(4):hover {
+  color: green;
+}
+.iconos-redes i:nth-child(5):hover {
+  color: darkred;
+}
+
+/*.iconos-redes ul li i:hover {
+  transition: color 0.2s linear 0.1s;
+}*/
+.iconos-redes li:nth-child(1):hover{
+  text-shadow: 0.5em 0.5em 0.5em darkblue;
+}
+.iconos-redes li:nth-child(2):hover{
+  text-shadow: 0.5em 0.5em 0.5em darkmagenta;
+}
+.iconos-redes li:nth-child(3):hover{
+  text-shadow: 0.5em 0.5em 0.5em lightskyblue;
+}
+.iconos-redes li:nth-child(4):hover{
+  text-shadow: 0.5em 0.5em 0.5em green;
+}
+.iconos-redes li:nth-child(5):hover{
+  text-shadow: 0.5em 0.5em 0.5em brown;
+}
+
+.logo-top img {
+  width: 50%;
+  margin: 0;
+  padding: 5px;
+}
+
+.nav-propia ul li:hover {
+  transform: scale(1.2);
+}
+
+.section-index-carousel {
+  display: flex;
+  justify-content: center;
+  max-height: 480px;
+}
+
+.borde-contraste {
+  color: black;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
+    0 0 0.2em white;
+}
+
+.h1-propio {
+  text-align: center;
+  font-family: "Vollkorn", serif;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.h2-propio {
+  text-align: center;
+  font-family: "Vollkorn", serif;
+  font-size: 250%;
+  padding-top: 3%;
+}
+
+main p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 5vh;
+  padding-top: 0;
+  font-family: "Inter Tight", sans-serif;
+  font-size: large;
+  text-align: justify;
+}
+
+footer {
+  background-color: #3d3c42;
+}
+.iframe-footer {
+  overflow: hidden;
+}
+.practicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.area-practica-areas {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+
+.area-practica-areas img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.areas-img-h3 {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
+    0 0 0.2em white;
+  
+}
+.parrafo-area-areas {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  color: black;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
+    0 0 0.2em white;
+  text-align: justify;
+}
+
+.h2-titulo {
+  text-align: center;
+  margin: 3%;
+}
+
+.parrafos-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 5vh;
+  padding-top: 0;
+  font-family: "Inter Tight", sans-serif;
+  font-size: large;
+  text-align: justify;
+}
+.parrafos-section p {
+  margin-top: 3vh;
+}
+
+.h3-section {
+  text-align: center;
+}
+
+.equipo div img {
+  width: 40vw;
+  margin: auto;
+  border-radius: 10%;
+}
+.integrantes{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+  .card-propia{
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.08);
+    margin: 1rem;
+    padding: 1rem;
+}
+  .btn-propio{
+    color: rgb(255, 255, 255);
+    background-color: #3d3c42;
+    border-color: #3d3c42;
+}
+.btn-propio:hover{
+  color: #3d3c42;
+  background-color: #f2f2f2;
+  border-color: #3d3c42;
+}
+.btn-propio:active{
+color: #3d3c42;
+background-color: #3d3c42;
+border-color: #3d3c42;
+box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-propio:disabled{
+  color: #3d3c42;
+  background-color: #3d3c42;
+  border-color: #3d3c42;
+}
+
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:33px;
+  color:black;
+  opacity: 60%;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}
+
+.ir-arriba:hover{
+  opacity: 100%;
+  color: black;
+}
+
+.whatsapp-button{
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 99;
+  background-color: #25d366;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  animation: effect 3s 5 ease-in;
+}
+
+@keyframes effect {
+  20%, 100% {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+  0%, 10%{
+      width: 55px;
+      height: 55px;
+      font-size: 35px;
+  }
+  5%{
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+}
+
+.form-group-propio{
+  margin-bottom: 1.5rem;
+}
+
+.bigicon {
+  margin-bottom: 1rem;
+  font-size: 35px;
+  color: #ffffff;
+  text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black,
+  0 0 0.2em darkred;
+
+}
+.input-propio:active, .input-propio:focus{
+  background-color: whitesmoke;
+}
