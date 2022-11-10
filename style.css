@@ -133,25 +133,6 @@ font-family: 'Vollkorn', serif;*/
   transform: scale(1.2);
 }
 
-/*.iconos-redes ul:nth-child(1):hover {
-  color: darkblue;
-}
-.iconos-redes ul li:nth-child(2):hover {
-  color: purple;
-}
-.iconos-redes i:nth-child(3):hover {
-  color: lightskyblue;
-}
-.iconos-redes i:nth-child(4):hover {
-  color: green;
-}
-.iconos-redes i:nth-child(5):hover {
-  color: darkred;
-}
-
-/*.iconos-redes ul li i:hover {
-  transition: color 0.2s linear 0.1s;
-}*/
 .iconos-redes li:nth-child(1):hover {
   text-shadow: 0.5em 0.5em 0.5em darkblue;
 }
