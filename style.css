@@ -51,15 +51,14 @@ font-family: 'Vollkorn', serif;*/
   .nav-propia {
     background-color: #f2f2f2;
   }
-  .whatsapp-button:hover{
+  .whatsapp-button:hover {
     background-color: #ffffff;
     color: #25d366;
     transform: scale(1.2);
   }
-  .areas-img-h3{
+  .areas-img-h3 {
     font-size: 2rem;
   }
-
 }
 
 @media screen and (max-width: 576px) {
@@ -79,22 +78,22 @@ font-family: 'Vollkorn', serif;*/
   .nav-propia {
     background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
   }
-  .whatsapp-button:hover{
+  .whatsapp-button:hover {
     background-color: #ffffff;
     color: #25d366;
     transform: scale(1.2);
   }
-  .areas-img-h3{
+  .areas-img-h3 {
     font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 320px){
-  .areas-img-h3{
+@media screen and (max-width: 320px) {
+  .areas-img-h3 {
     font-size: 1.5rem;
   }
-  .parrafo-area-areas{
-    font-size: .7rem;
+  .parrafo-area-areas {
+    font-size: 0.7rem;
   }
 }
 
@@ -153,19 +152,19 @@ font-family: 'Vollkorn', serif;*/
 /*.iconos-redes ul li i:hover {
   transition: color 0.2s linear 0.1s;
 }*/
-.iconos-redes li:nth-child(1):hover{
+.iconos-redes li:nth-child(1):hover {
   text-shadow: 0.5em 0.5em 0.5em darkblue;
 }
-.iconos-redes li:nth-child(2):hover{
+.iconos-redes li:nth-child(2):hover {
   text-shadow: 0.5em 0.5em 0.5em darkmagenta;
 }
-.iconos-redes li:nth-child(3):hover{
+.iconos-redes li:nth-child(3):hover {
   text-shadow: 0.5em 0.5em 0.5em lightskyblue;
 }
-.iconos-redes li:nth-child(4):hover{
+.iconos-redes li:nth-child(4):hover {
   text-shadow: 0.5em 0.5em 0.5em green;
 }
-.iconos-redes li:nth-child(5):hover{
+.iconos-redes li:nth-child(5):hover {
   text-shadow: 0.5em 0.5em 0.5em brown;
 }
 
@@ -251,7 +250,6 @@ footer {
   color: black;
   text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
     0 0 0.2em white;
-  
 }
 .parrafo-area-areas {
   display: flex;
@@ -263,6 +261,7 @@ footer {
   text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
     0 0 0.2em white;
   text-align: justify;
+  font-style: italic;
 }
 
 .h2-titulo {
@@ -293,60 +292,60 @@ footer {
   margin: auto;
   border-radius: 10%;
 }
-.integrantes{
+.integrantes {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
 }
-  .card-propia{
-    border: 0;
-    background-color: rgba(0, 0, 0, 0.08);
-    margin: 1rem;
-    padding: 1rem;
+.card-propia {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.08);
+  margin: 1rem;
+  padding: 1rem;
 }
-  .btn-propio{
-    color: rgb(255, 255, 255);
-    background-color: #3d3c42;
-    border-color: #3d3c42;
+.btn-propio {
+  color: rgb(255, 255, 255);
+  background-color: #3d3c42;
+  border-color: #3d3c42;
 }
-.btn-propio:hover{
+.btn-propio:hover {
   color: #3d3c42;
   background-color: #f2f2f2;
   border-color: #3d3c42;
 }
-.btn-propio:active{
-color: #3d3c42;
-background-color: #3d3c42;
-border-color: #3d3c42;
-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+.btn-propio:active {
+  color: #3d3c42;
+  background-color: #3d3c42;
+  border-color: #3d3c42;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn-propio:disabled{
+.btn-propio:disabled {
   color: #3d3c42;
   background-color: #3d3c42;
   border-color: #3d3c42;
 }
 
-.ir-arriba{
-  display:none;
-  background-repeat:no-repeat;
-  font-size:33px;
-  color:black;
+.ir-arriba {
+  display: none;
+  background-repeat: no-repeat;
+  font-size: 33px;
+  color: black;
   opacity: 60%;
-  cursor:pointer;
-  position:fixed;
-  bottom:10px;
-  right:10px;
-  z-index:2;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
 }
 
-.ir-arriba:hover{
+.ir-arriba:hover {
   opacity: 100%;
   color: black;
 }
 
-.whatsapp-button{
+.whatsapp-button {
   position: fixed;
   bottom: 15px;
   left: 15px;
@@ -362,31 +361,33 @@ box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
-  box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  -webkit-box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
   animation: effect 3s 5 ease-in;
 }
 
 @keyframes effect {
-  20%, 100% {
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
+  20%,
+  100% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
-  0%, 10%{
-      width: 55px;
-      height: 55px;
-      font-size: 35px;
+  0%,
+  10% {
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
   }
-  5%{
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
+  5% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
 }
 
-.form-group-propio{
+.form-group-propio {
   margin-bottom: 1.5rem;
 }
 
@@ -395,9 +396,9 @@ box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   font-size: 35px;
   color: #ffffff;
   text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black,
-  0 0 0.2em darkred;
-
+    0 0 0.2em darkred;
 }
-.input-propio:active, .input-propio:focus{
+.input-propio:active,
+.input-propio:focus {
   background-color: whitesmoke;
 }
