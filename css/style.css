@@ -237,6 +237,12 @@ main p {
   font-size: large;
   text-align: justify;
 }
+.parrafos-section img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .parrafos-section p {
   margin-top: 3vh;
 }

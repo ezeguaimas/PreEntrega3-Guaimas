@@ -112,8 +112,14 @@ main {
 	font-family: $font-family_1;
 	font-size: large;
 	text-align: justify;
+	img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
 	p {
-		margin-top: 3vh;
+	margin-top: 3vh;
 	}
 }
 .h3-section {
