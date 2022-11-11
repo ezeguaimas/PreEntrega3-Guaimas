@@ -1,104 +1,12 @@
-/*font-family: 'Inter Tight', sans-serif;
-font-family: 'Vollkorn', serif;*/
-
-* {
-  margin: 0;
-  padding: 0;
-}
-.global-container {
-  background-image: linear-gradient(to right, #3d3c42, #ffffea);
-}
-
-.brand-propia img {
-  width: 80px;
-  height: 80px;
-}
-
 .top-fila {
   display: flex;
   flex-direction: row;
   background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
 }
+
 .llamar i {
   font-size: 50px;
   color: darkred;
-}
-
-@media screen and (min-width: 576px) {
-  .brand-propia img {
-    display: none;
-  }
-  .llamar {
-    display: none;
-  }
-  .nav-list-propia a {
-    font-size: 140%;
-    font-family: "Inter Tight", sans-serif;
-    font-weight: bold;
-  }
-  .nav-list-propia li {
-    padding: 5px;
-  }
-  .carousel-item-propio img {
-    max-width: 720px;
-    max-height: 480px;
-  }
-
-  .parrafo-area-areas:hover {
-    transition: all 1s;
-    font-size: 140%;
-  }
-  .nav-propia {
-    background-color: #f2f2f2;
-  }
-  .whatsapp-button:hover {
-    background-color: #ffffff;
-    color: #25d366;
-    transform: scale(1.2);
-  }
-  .areas-img-h3 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .logo-top {
-    display: none;
-  }
-  .top-fila {
-    display: none;
-  }
-  .carousel-item-propio img {
-    width: 100%;
-  }
-
-  .nav-list-propia a {
-    font-family: "Inter Tight", sans-serif;
-  }
-  .nav-propia {
-    background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
-  }
-  .whatsapp-button:hover {
-    background-color: #ffffff;
-    color: #25d366;
-    transform: scale(1.2);
-  }
-  .areas-img-h3 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .areas-img-h3 {
-    font-size: 1.5rem;
-  }
-  .parrafo-area-areas {
-    font-size: 0.7rem;
-  }
-}
-
-.nav-list-propia {
-  justify-content: flex-end;
 }
 
 .iconos-redes {
@@ -108,7 +16,6 @@ font-family: 'Vollkorn', serif;*/
   width: 100%;
   align-items: center;
 }
-
 .iconos-redes ul {
   display: flex;
   margin: 10px;
@@ -116,23 +23,19 @@ font-family: 'Vollkorn', serif;*/
   width: 100%;
   justify-content: flex-end;
 }
-
 .iconos-redes i {
   padding: 3px;
   font-size: 45px;
   color: rgb(55, 55, 77);
 }
-
 .iconos-redes li {
   list-style: none;
   transition: all 0.3s ease-in-out;
   justify-content: space-between;
 }
-
 .iconos-redes li:hover {
   transform: scale(1.2);
 }
-
 .iconos-redes li:nth-child(1):hover {
   text-shadow: 0.5em 0.5em 0.5em darkblue;
 }
@@ -155,8 +58,91 @@ font-family: 'Vollkorn', serif;*/
   padding: 5px;
 }
 
+@media screen and (min-width: 576px) {
+  .brand-propia img {
+    display: none;
+  }
+  .llamar {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logo-top {
+    display: none;
+  }
+  .top-fila {
+    display: none;
+  }
+}
+.nav-list-propia {
+  justify-content: flex-end;
+}
+
 .nav-propia ul li:hover {
   transform: scale(1.2);
+}
+.nav-propia ul li:hover a {
+  color: darkred;
+}
+
+.brand-propia img {
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (min-width: 576px) {
+  .nav-list-propia a {
+    font-size: 140%;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: bold;
+  }
+  .nav-list-propia li {
+    padding: 5px;
+  }
+  .nav-propia {
+    background-color: #f2f2f2;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-list-propia a {
+    font-family: "Inter Tight", sans-serif;
+  }
+  .nav-propia {
+    background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
+  }
+}
+footer {
+  background-color: #3d3c42;
+}
+
+.iframe-footer {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes effect {
+  20%, 100% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+  0%, 10% {
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+  }
+  5% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
+.global-container {
+  background-image: linear-gradient(to right, #3d3c42, #ffffea);
 }
 
 .section-index-carousel {
@@ -167,8 +153,7 @@ font-family: 'Vollkorn', serif;*/
 
 .borde-contraste {
   color: black;
-  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
-    0 0 0.2em white;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
 }
 
 .h1-propio {
@@ -198,12 +183,6 @@ main p {
   text-align: justify;
 }
 
-footer {
-  background-color: #3d3c42;
-}
-.iframe-footer {
-  overflow: hidden;
-}
 .practicas {
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +195,6 @@ footer {
   position: relative;
   display: inline-block;
 }
-
 .area-practica-areas img {
   width: 100%;
   margin-bottom: 2rem;
@@ -229,9 +207,9 @@ footer {
   left: 30px;
   text-align: center;
   color: black;
-  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
-    0 0 0.2em white;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
 }
+
 .parrafo-area-areas {
   display: flex;
   position: absolute;
@@ -239,8 +217,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -10%);
   color: black;
-  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
-    0 0 0.2em white;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
   text-align: justify;
   font-style: italic;
 }
@@ -273,6 +250,7 @@ footer {
   margin: auto;
   border-radius: 10%;
 }
+
 .integrantes {
   display: flex;
   flex-direction: column;
@@ -280,12 +258,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .card-propia {
   border: 0;
   background-color: rgba(0, 0, 0, 0.08);
   margin: 1rem;
   padding: 1rem;
 }
+
 .btn-propio {
   color: rgb(255, 255, 255);
   background-color: #3d3c42;
@@ -320,7 +300,6 @@ footer {
   right: 10px;
   z-index: 2;
 }
-
 .ir-arriba:hover {
   opacity: 100%;
   color: black;
@@ -342,30 +321,15 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
-  box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0 0 25px -6px rgb(0, 0, 0);
+  -moz-box-shadow: 0 0 25px -6px rgb(0, 0, 0);
+  box-shadow: 0 0 25px -6px rgb(0, 0, 0);
   animation: effect 3s 5 ease-in;
 }
-
-@keyframes effect {
-  20%,
-  100% {
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-  }
-  0%,
-  10% {
-    width: 55px;
-    height: 55px;
-    font-size: 35px;
-  }
-  5% {
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-  }
+.whatsapp-button:hover {
+  background-color: #ffffff;
+  color: #25d366;
+  transform: scale(1.2);
 }
 
 .form-group-propio {
@@ -376,10 +340,44 @@ footer {
   margin-bottom: 1rem;
   font-size: 35px;
   color: #ffffff;
-  text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black,
-    0 0 0.2em darkred;
+  text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em darkred;
 }
-.input-propio:active,
+
+.input-propio:active {
+  background-color: whitesmoke;
+}
 .input-propio:focus {
   background-color: whitesmoke;
 }
+
+@media screen and (min-width: 576px) {
+  .carousel-item-propio img {
+    max-width: 720px;
+    max-height: 480px;
+  }
+  .parrafo-area-areas:hover {
+    transition: all 1s;
+    font-size: 140%;
+  }
+  .areas-img-h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-item-propio img {
+    width: 100%;
+  }
+  .areas-img-h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .areas-img-h3 {
+    font-size: 1.5rem;
+  }
+  .parrafo-area-areas {
+    font-size: 0.7rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

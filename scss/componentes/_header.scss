@@ -1,0 +1,89 @@
+.top-fila {
+	display: flex;
+	flex-direction: row;
+	background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
+}
+.llamar {
+	i {
+		font-size: 50px;
+		color: $color_1;
+	}
+}
+.iconos-redes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	ul {
+		display: flex;
+		margin: 10px;
+		padding: 5px;
+		width: 100%;
+		justify-content: flex-end;
+	}
+	i {
+		padding: 3px;
+		font-size: 45px;
+		color: $color_3;
+	}
+	li {
+		list-style: none;
+		transition: all 0.3s ease-in-out;
+		justify-content: space-between;
+		&:hover {
+			transform: scale(1.2);
+		}
+		&:nth-child(1) {
+			&:hover {
+				text-shadow: 0.5em 0.5em 0.5em darkblue;
+			}
+		}
+		&:nth-child(2) {
+			&:hover {
+				text-shadow: 0.5em 0.5em 0.5em darkmagenta;
+			}
+		}
+		&:nth-child(3) {
+			&:hover {
+				text-shadow: 0.5em 0.5em 0.5em lightskyblue;
+			}
+		}
+		&:nth-child(4) {
+			&:hover {
+				text-shadow: 0.5em 0.5em 0.5em green;
+			}
+		}
+		&:nth-child(5) {
+			&:hover {
+				text-shadow: 0.5em 0.5em 0.5em brown;
+			}
+		}
+	}
+}
+.logo-top {
+	img {
+		width: 50%;
+		margin: 0;
+		padding: 5px;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.brand-propia {
+		img {
+			display: none;
+		}
+	}
+	.llamar {
+		display: none;
+	}
+}
+@media screen and (max-width: 576px) {
+	.logo-top {
+		display: none;
+	}
+	.top-fila {
+		display: none;
+	}
+}
