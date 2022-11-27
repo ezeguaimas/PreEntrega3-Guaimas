@@ -1,7 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .top-fila {
   display: flex;
   flex-direction: row;
-  background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
+  background-image: linear-gradient(to right, #898989, #ffffea);
 }
 
 .llamar i {
@@ -23,33 +28,33 @@
   width: 100%;
   justify-content: flex-end;
 }
-.iconos-redes i {
-  padding: 3px;
-  font-size: 45px;
-  color: rgb(55, 55, 77);
-}
-.iconos-redes li {
+.iconos-redes ul li {
   list-style: none;
   transition: all 0.3s ease-in-out;
   justify-content: space-between;
 }
-.iconos-redes li:hover {
+.iconos-redes ul li:hover {
   transform: scale(1.2);
 }
-.iconos-redes li:nth-child(1):hover {
-  text-shadow: 0.5em 0.5em 0.5em darkblue;
+.iconos-redes ul li:nth-child(1):hover i {
+  color: #4267b2;
 }
-.iconos-redes li:nth-child(2):hover {
-  text-shadow: 0.5em 0.5em 0.5em darkmagenta;
+.iconos-redes ul li:nth-child(2):hover i {
+  color: #c13584;
 }
-.iconos-redes li:nth-child(3):hover {
-  text-shadow: 0.5em 0.5em 0.5em lightskyblue;
+.iconos-redes ul li:nth-child(3):hover i {
+  color: #1da1f2;
 }
-.iconos-redes li:nth-child(4):hover {
-  text-shadow: 0.5em 0.5em 0.5em green;
+.iconos-redes ul li:nth-child(4):hover i {
+  color: #25d366;
 }
-.iconos-redes li:nth-child(5):hover {
-  text-shadow: 0.5em 0.5em 0.5em brown;
+.iconos-redes ul li:nth-child(5):hover i {
+  color: #db4437;
+}
+.iconos-redes ul li i {
+  padding: 3px;
+  font-size: 45px;
+  color: #37374d;
 }
 
 .logo-top img {
@@ -78,10 +83,12 @@
   justify-content: flex-end;
 }
 
-.nav-propia ul li:hover {
-  transform: scale(1.2);
+.nav-propia a {
+  color: #3d3c42;
 }
-.nav-propia ul li:hover a {
+.nav-propia a:hover {
+  transform: scale(1.2);
+  transition: all 0.4s;
   color: darkred;
 }
 
@@ -91,13 +98,13 @@
 }
 
 @media screen and (min-width: 576px) {
-  .nav-list-propia a {
+  .nav-list-propia li {
+    padding: 5px;
+  }
+  .nav-list-propia li a {
     font-size: 140%;
     font-family: "Inter Tight", sans-serif;
     font-weight: bold;
-  }
-  .nav-list-propia li {
-    padding: 5px;
   }
   .nav-propia {
     background-color: #f2f2f2;
@@ -108,7 +115,12 @@
     font-family: "Inter Tight", sans-serif;
   }
   .nav-propia {
-    background-image: linear-gradient(to right, rgb(61, 60, 66), #ffffea);
+    background-image: linear-gradient(to right, #898989, #ffffea);
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-propia a:hover {
+    transform: scale(1.01);
   }
 }
 footer {
@@ -119,11 +131,92 @@ footer {
   overflow: hidden;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.btn-rrss-footer {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border: 1px black;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.btn-rrss-footer:hover {
+  filter: brightness(1.2);
 }
 
+.btn-fb {
+  background-color: #4267b2;
+}
+.btn-fb:hover {
+  background-color: #4267b2;
+  border-color: 2px black;
+}
+
+.btn-twt {
+  background-color: #1da1f2;
+}
+.btn-twt:hover {
+  background-color: #1da1f2;
+  border-color: 2px black;
+}
+
+.btn-inst {
+  background-color: #c13584;
+}
+.btn-inst:hover {
+  background-color: #c13584;
+  border-color: 2px black;
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-group-propio {
+  margin-bottom: 1.5rem;
+}
+
+.bigicon {
+  margin-bottom: 1rem;
+  font-size: 35px;
+  color: white;
+  text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em darkred;
+}
+
+.input-propio {
+  resize: none;
+  background-color: white;
+}
+.input-propio:focus {
+  background-color: whitesmoke;
+  color: black;
+  border-color: #898989;
+  box-shadow: 0 0 0 0.25rem rgba(139, 0, 0, 0.3);
+}
+.input-propio:hover {
+  border-color: #898989;
+  box-shadow: 0 0 0 0.25rem rgba(55, 55, 77, 0.3);
+}
+
+.btn-input-propio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-input-propio input {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .form-background {
+    background-image: url(../images/estatua-justicia.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+  .col-md-8-propio {
+    width: 50%;
+  }
+}
 @keyframes effect {
   20%, 100% {
     width: 50px;
@@ -141,8 +234,33 @@ footer {
     font-size: 30px;
   }
 }
+@media screen and (min-width: 576px) {
+  .carousel-item-propio img {
+    max-width: 720px;
+    max-height: 480px;
+  }
+  .areas-img-h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-item-propio img {
+    width: 100%;
+  }
+  .areas-img-h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .areas-img-h3 {
+    font-size: 1.5rem;
+  }
+  .parrafo-area-areas {
+    font-size: 0.8rem;
+  }
+}
 .global-container {
-  background-image: linear-gradient(to right, #3d3c42, #ffffea);
+  background-image: linear-gradient(to right, #898989, #ffffea);
 }
 
 .section-index-carousel {
@@ -156,7 +274,7 @@ footer {
   text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
 }
 
-.h1-propio {
+.h1-index {
   text-align: center;
   font-family: "Vollkorn", serif;
   font-weight: 600;
@@ -165,11 +283,19 @@ footer {
   padding-bottom: 3%;
 }
 
-.h2-propio {
+.h2-main {
   text-align: center;
   font-family: "Vollkorn", serif;
   font-size: 250%;
   padding-top: 3%;
+}
+
+.h2-propio {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 140%;
 }
 
 main p {
@@ -199,6 +325,9 @@ main p {
   width: 100%;
   margin-bottom: 2rem;
 }
+.area-practica-areas img:hover {
+  filter: blur(5px) brightness(0.2) sepia(1);
+}
 
 .areas-img-h3 {
   display: flex;
@@ -222,7 +351,7 @@ main p {
   font-style: italic;
 }
 
-.h2-titulo {
+.h1-titulo {
   text-align: center;
   margin: 3%;
 }
@@ -251,10 +380,11 @@ main p {
   text-align: center;
 }
 
-.equipo div img {
+.equipo img {
   width: 40vw;
   margin: auto;
   border-radius: 10%;
+  filter: sepia(1);
 }
 
 .integrantes {
@@ -270,10 +400,11 @@ main p {
   background-color: rgba(0, 0, 0, 0.08);
   margin: 1rem;
   padding: 1rem;
+  max-width: 540px;
 }
 
 .btn-propio {
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: #3d3c42;
   border-color: #3d3c42;
 }
@@ -318,7 +449,7 @@ main p {
   z-index: 99;
   background-color: #25d366;
   border-radius: 50%;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   width: 50px;
   height: 50px;
@@ -333,57 +464,9 @@ main p {
   animation: effect 3s 5 ease-in;
 }
 .whatsapp-button:hover {
-  background-color: #ffffff;
+  background-color: white;
   color: #25d366;
   transform: scale(1.2);
-}
-
-.form-group-propio {
-  margin-bottom: 1.5rem;
-}
-
-.bigicon {
-  margin-bottom: 1rem;
-  font-size: 35px;
-  color: #ffffff;
-  text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em darkred;
-}
-
-.input-propio:active {
-  background-color: whitesmoke;
-}
-.input-propio:focus {
-  background-color: whitesmoke;
-}
-
-@media screen and (min-width: 576px) {
-  .carousel-item-propio img {
-    max-width: 720px;
-    max-height: 480px;
-  }
-  .parrafo-area-areas:hover {
-    transition: all 1s;
-    font-size: 140%;
-  }
-  .areas-img-h3 {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .carousel-item-propio img {
-    width: 100%;
-  }
-  .areas-img-h3 {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 320px) {
-  .areas-img-h3 {
-    font-size: 1.5rem;
-  }
-  .parrafo-area-areas {
-    font-size: 0.7rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

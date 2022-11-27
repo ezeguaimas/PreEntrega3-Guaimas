@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords"
     content="estudio juridico, abogados en salta, mejores abogados en salta, mejor abogado, matias nikovitch, natalia otero, federico vanni, necesito un abogado, justicia, salta, 4400, ciudad judicial, derecho, defensa, penal" />
-  <meta name="description"
-    content="Estudio Juridico en Salta - Abogados - Matias Nikovitch - Natalia Otero - Federico Vanni" />
+  <meta name="description" content="Estudio Juridico en Salta - Formulario de contacto con el Estudio NOV" />
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -28,7 +27,7 @@
     NOV | Consultora Legal Integral | Estudio con el equipo de Abogados
     expertos en todas las ramas del derecho
   </title>
-  <link rel="shortcut icon" href="./images/favicon-nov.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../images/favicon-nov.jpg" type="image/x-icon" />
 </head>
 
 <body>
@@ -36,7 +35,7 @@
     <header>
       <div class="top-fila">
         <div class="logo-top" id="logo-index">
-          <a href="./index.html"><img src="./images/logo-wide.jpeg" alt="logo estudio nov wide" /></a>
+          <a href="../index.html"><img src="../images/logo-wide.jpeg" alt="logo estudio nov wide" /></a>
         </div>
         <div class="iconos-redes">
           <ul>
@@ -62,7 +61,7 @@
 
       <nav class="navbar navbar-expand-lg xxxxxbg-light nav-propia">
         <div class="container-fluid nav-mobile">
-          <a class="navbar-brand brand-propia" href="./index.html"><img src="./images/logo-nov-120.jpg"
+          <a class="navbar-brand brand-propia" href="../index.html"><img src="../images/logo-nov-120.jpg"
               alt="logo estudio nov" /></a>
           <a class="navbar-brand llamar" href="tel:+5493874738036"><i
               class="fa-solid fa-phone-volume icono-llamar"></i></a>
@@ -74,19 +73,19 @@
           <div class="collapse navbar-collapse nav-list-propia" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html">Inicio</a>
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/areas.html">Áreas de Práctica</a>
+                <a class="nav-link" href="./areas.html">Áreas de Práctica</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/equipo.html">Equipo</a>
+                <a class="nav-link" href="./equipo.html">Equipo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -94,81 +93,65 @@
       </nav>
     </header>
 
-    <h1 class="h1-index">NOV Consultora Legal Integral</h1>
+    <h1 class="h1-titulo">Contacto</h1>
+    <div class="container container-formulario">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well well-sm">
+            <form action="../enviar.php" method="post" class="form-horizontal">
+              <fieldset>
+                <legend class="h2 h2-propio text-center xxxheader">
+                  Conéctese con nosotros
+                </legend>
 
-    <section class="section-index-carousel">
-      <div id="carouselExampleCaptions" class="carousel carousel-dark carousel-fade xxxslide carousel-propio"
-        data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+                <div class="form-background">
+                  <div class="form-group form-group-propio">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                    <div class="col-md-8 col-md-8-propio">
+                      <input id="name" name="name" type="text" placeholder="Nombre" class="form-control input-propio" />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-group-propio">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                    <div class="col-md-8 col-md-8-propio">
+                      <input id="email" name="email" type="email" placeholder="Email" class="form-control input-propio"
+                        required />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-group-propio">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                    <div class="col-md-8 col-md-8-propio">
+                      <input id="phone" name="phone" type="tel" placeholder="Teléfono" class="form-control input-propio"
+                        required />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-group-propio">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                        class="fa fa-pencil-square-o bigicon"></i></span>
+                    <div class="col-md-8 col-md-8-propio">
+                      <textarea class="form-control input-propio" id="message" name="message"
+                        placeholder="Déjenos su mensaje. Nos pondremos en contacto con Ud. en las proximas horas."
+                        rows="7" required></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group form-group-propio btn-input-propio">
+                  <div class="col-md-12 text-center btn-input-propio">
+                    <input class="btn-propio btn xxxbtn-primary btn-lg" type="submit" value="Enviar mensaje">
+                    <input class="btn-propio btn xxxbtn-primary btn-lg" type="reset" value="Borrar">
+                  </div>
+                </div>
+
+              </fieldset>
+            </form>
+          </div>
         </div>
-        <div class="carousel-inner inner-propio">
-          <div class="carousel-item carousel-item-propio active">
-            <img src="./images/consulta-abogado.webp" class="d-block"
-              alt="abogados en un escritorio firmando un documento y martillo de la justicia en primer plano" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="borde-contraste">NOV Consultora Legal</h5>
-              <p class="borde-contraste">Speedy justice for you</p>
-            </div>
-          </div>
-          <div class="carousel-item carousel-item-propio">
-            <img src="./images/grupo-trabajando.webp" class="d-block" alt="grupo de personas trabajando juntas" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="borde-contraste">NOV Consultora Legal</h5>
-              <p class="borde-contraste">Speedy justice for you</p>
-            </div>
-          </div>
-          <div class="carousel-item carousel-item-propio">
-            <img src="./images/libro-leyes-lectura.webp" class="d-block"
-              alt="mujer abogada leyendo un libro con balanza de la justicia en el escritorio" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="borde-contraste">NOV Consultora Legal</h5>
-              <p class="borde-contraste">Speedy justice for you</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
       </div>
-    </section>
-
-    <main>
-      <h2 class="h2-main">Nuestra firma</h2>
-      <p>
-        El estudio NOV presta el servicio de Abogacía en todas las ramas del
-        Derecho a empresas, funcionarios, profesionales y particulares. Sus
-        profesionales se destacan por su experiencia en recursos
-        extraordinarios ante la Corte Suprema de Justicia de la Nación y
-        Cortes Supremas Provinciales y Tribunales de Casación en lo Penal.
-      </p>
-      <p>
-        Para la prestación de servicio, cuya complejidad puede comprender
-        varios ámbitos jurisdiccionales de nuestro país, el estudio cuenta con
-        corresponsalías en todos ellos. Cuando la cuestión excede el ámbito de
-        la Nación, cuenta con vinculación con despachos de abogados en
-        diversos países, así como con cuerpos profesionales en las más
-        diversas disciplinas auxiliares.
-      </p>
-      <p>
-        <em>Nos distinguimos por enfatizar el vínculo con el cliente a
-          través de un contacto directo y un trato periódico con sus
-          profesionales, siempre dispuestos a atender sus inquietudes y el
-          desarrollo en conjunto de la mejor solución jurídica para el caso.</em>
-      </p>
-    </main>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white">
@@ -180,8 +163,8 @@
                 NOV Estudio Integral
               </h6>
               <p>
-                El estudio integral que domina en todas las ramas del
-                Derecho asesorando a empresas, funcionarios, profesionales y
+                El estudio integral que domina en todas las ramas del Derecho
+                asesorando a empresas, funcionarios, profesionales y
                 particulares.
               </p>
             </div>
@@ -232,7 +215,6 @@
               <a class="btn btn-primary btn-floating m-1 btn-rrss-footer btn-inst" target="_blank"
                 href="https://www.instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
             </div>
-
           </div>
         </div>
       </div>
@@ -263,7 +245,7 @@
   <script>
     AOS.init();
   </script>
-  <script type="text/javascript" src="./js/jsicon.js"></script>
+  <script type="text/javascript" src="../js/jsicon.js"></script>
 </body>
 
 </html>
